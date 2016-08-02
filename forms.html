@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Form Resources</title>
+  <meta name="description" content="Form resources">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://npmcdn.com/basscss@8.0.1/css/basscss.min.css" rel="stylesheet">
+
+</head>
+<body class="p4">
+<div class="clearfix mxn2">
+<nav class="sm-col sm-col-6 md-col-5 lg-col-4 px2 max-width-1">
+<div class="border p3">
+	<ul>
+		<li><a href="#content">Content</a></li>
+			<ul>
+			<li><a href="#user-centered-design">User-Centered Design</a></li>
+			<li><a href="#staying-user-centered">Staying User Centered</a></li>
+			<li><a href="#question-cost">Every Question Has a Cost</a></li>
+			<li><a href="#question-protocol">Question Protocol</a></li>
+			<li><a href="#info-to-give">What information to give</a></li>
+			<li><a href="#plain-language">Plain Language</a></li>
+			<li><a href="#plain-language-examples">Plain Language Examples</a></li>
+			</ul>
+		<li><a href="#visual-design">Visual Design</a></li>
+			<ul>
+			<li><a href="#importance-of-visual-design">Why is visual design important?</a></li>
+			<li><a href="#hierarchy">Hierarchy</a></li>
+			<li><a href="#showing-hierarchy">Ways of Showing Hierarchy</a></li>
+			<li><a href="#typography">Typography</a></li>
+			</ul>
+		<li><a href="#delivery">Delivery</a></li>
+			<ul>
+			<li><a href="#paper">Paper forms</a></li>
+			<li><a href="#pdf">Fillable PDF</a></li>
+			<li><a href="#web">Web Forms</a></li>
+			</ul>
+		<li><a href="#testing">Testing: How do I know it works?</a></li>
+			<ul>
+			<li><a href="#usability-basics">Basics of Usability Testing</a></li>
+			</ul>
+		<li><a href="#checklist">Checklist</a></li>
+		<li><a href="#resources">Resources</a></li>
+	</ul>
+</div>
+</nav>
+
+<article class="sm-col sm-col-6 md-col-7 lg-col-8 px2 max-width-3">
+<div class="border p4">
+<h1 class="mt0">Form Design for Government</h1>
+<p class="h5 italic">Rachel Edelman</p>
+
+	<p>Forms are one of the most common ways residents interact with their government, but they often fall short. A well designed form can reduce errors, increase completion rates and improve customer satisfaction. I'll cover principles and techniques relating to visual design, user-centered thinking, plain language writing, and more. You'll learn to make great documents from scratch, or revise existing materials to create forms that are easy to fill out and get you the information you need</p>
+
+	<p>Form is a pretty general term, but here I'll be using it to mean something that you fill out in order to receive a service, or engage in a transaction. That could mean something as simple as RSVPing to an event, or something more complex like filling out an application for social services.</p>
+
+	<p>This article is based on a form and survey design workshop I gave with Jessica Cole to employees of the Kansas City, Missouri city government. You can find the slides from that presentaton which include Jessica's excellent section on survey design, <a href="https://docs.google.com/presentation/d/1-e4QtmqwMZoDVH30jNE9UWhMXr_eK2Tlulh_hL1C0JQ/edit?usp=sharing">here</a>.</p>
+<hr>
+<section>
+	<h2 id="content">Content: What should you put in your form?</h2>
+
+	<h3 id="user-centered-design">User-Centered Design</h3>
+	<p>Everything we’re going to talk about today is going to be through the lens of a philosophy called user-centered design. In this context, I’m going to use “user” to mean the person filling out the form, although you’ll also have internal users, who process it. Your city man talk about customer service. User-centred is one way of delivering great services to residents.</p>
+
+	<img src="ucd.png">
+	<caption>This image comes from a Code for America <a href="https://www.codeforamerica.org/how-tos/user-needs">primer</a> on identifying user needs.</caption>
+	
+	<ol>
+	<li>Build something small that meets people’s needs. It won’t be perfect, because nothing is on the first go round, but it should let people achieve their basic goal.</li>
+	<li>Measure. Observe people using it. We’ll cover specific strategies for this in the <a href="#testing">testing section</a>.</li>
+	<li>Learn. Collect feedback about what worked and what didn’t</li>
+	<li>Start the cycle over again by building a second version based on the feedback</li>
+	</ol>
+
+	<h3 id="staying-user-centered">Staying User Centered</h3>
+		<h4>Advocate for user needs</h4>
+		<p>Advocate for user needs. Unless you have a cartoonishly evil boss, you’re not going to encounter anyone who doesn’t want this. But what you will encounter is inertia. If something has always been done a certain way, it can be hard to change.</p>
+		<h4>Think about it from an outside perspective</h4>
+		<p>Because you work for the city, you understand how things work internally. You’re  probably comfortable thinking in terms of organizational structure. You know that question 12 is on there because department A requires it, and that question 9 is repeated on two pages because one copy goes to department B and one goes to Dept C.  Residents don’t necessarily think in these terms. When you’re created outward facing materials, you need to keep an outside perspective in mind.</p>
+		<h4>Take the burden off the user</h4>
+		<p>And finally, how can  you coordinate internally to take some burden off the user? Maybe Departments B and C can share data amongst themselves so the user doesn’t have to answer a question twice. Maybe you have ways of getting data without making people fill out a form at all. This is going to make users happier which is a goal in and of itself, but happy users are also less likely to make sloppy errors, or abandon transactions altogether.</p>
+
+	<h3 id="question-cost">Every Question Has a Cost</h3>
+		<p>There is a cost to you (you have to process and store the answer). There is a cost to the user. As part of my work for the Kansas City Health Department, I shadowed a parent going through the intake process to get her son immunized. Afterwards, she told me the hardest part was trying to fill out the intake paperwork while her two kids ran in circles around the waiting room. In between answering questions about insurance status and immunization history, she had to broker negotiations about custody of a toy truck.</p>
+		<p>Every time you add a question to a form, I want you to imagine the user filling it out with one hand, while using the other to break up a brawl between toddlers.</p>
+
+	<h3 id="question-protocol">Question Protocol</h3>
+		<p>So how do you reduce the number of questions you’re asking? One tool you can use is a question protocol. This is a procedure you can use to vet each field on your form. Caroline Jarret is a forms and surveys specialist who has developed <a href="http://www.uxmatters.com/mt/archives/2010/06/the-question-protocol-how-to-make-sure-every-form-field-is-necessary.php
+">a great one</a>. </p>
+
+		<p>She presents four questions that you should be able to answer about each field on your form. If you don’t have a good answer for each one, you should remove the field. The answers to these questions will also help you do that, if you face pushback.</p>
+
+		<p>Here's my variation on Caroline's protocol:</p>
+		<ol>
+			<li>Who within your organization uses the answer?</li>
+			<li>What do they use it for?</li>
+			<li>Is the answer required or optional?</li>
+			<li>What happens if a user enters incorrect information?</li>
+		</ol> 
+
+
+	<h3 id="info-to-give">What information to give</h3>
+		<p>This is about user centered design. Think about what someone who doesn’t know what you know would need.</p>
+		<h4>Why are you asking?</h4>
+		<p>If you’re asking for sensitive or unexpected information, be clear about why it’s needed, and what will happen to the data.</p>
+		<h4>What is required?</h4>
+		<p>Make it clear what questions are optional vs required.</p>
+		<h4>What do I need before I start?</h4>
+		<p>If steps need to be taken before filling out and submitting the form list them upfront. These could be gathering documents, receiving a case number, or submitting a different form. You don’t want someone to abandon a form because they didn’t have what they needed to finish it.</p>
+		<h4>What happens next?</h4>
+		<p>Be clear about timeline and additional steps after submitting. Should they wait for a confirmation letter? Will they need to store a case number? Should they call someone if something doesn’t happen in a certain time period? I know it’s not always possible to give an exact timeline, but filling out a form can feel like throwing a paper airplane into a void. You can help.</p>
+
+	
+	<h3 id="plain-language">Plain Language</h3>
+		<h4>Use simple words</h4>
+		<p>You want to be professional and authoritative. That doesn’t mean you have to use big words, if small ones will do.</p>
+		<h4>Use short sentences</h3>
+		<p>People generally find shorter sentences easier to understand. You should stick to one idea per sentence. If you’re adding parentheses, or semicolons, or going over 25 words, check yourself. Periods are free. Use them liberally.</p>
+		<h4>Write naturally</h3>
+		<p>Read your writing out loud to make sure it sounds like something a human being would say. Think about what kind of tone do you want, and be intentional about it.</p>
+		<h4>Talk directly to the reader</h3>
+		<p>In most cases, it’s perfectly fine to say “you” and “your”. Don't make the reader guess who you're talking about.</p>
+		<h4>Don’t use jargon or legalese</h3>
+		<p>Legal language will be hard to remove, so you must persevere. Some things need to be written by lawyers, but most things don’t. Use the lessons of the question protocol. Who says this language needs to be used? What specific regulation applies? What will happen if this language is not used?</p>
+		<h4>Avoid the passive voice</h3>
+		<p>Use active language.</p>
+
+	<h3 id="plain-language-examples">Plain Language Example</h3>
+		<p>This is an example from a parade permit application:</p>
+		<blockquote>“The permit for the procession or parade shall be in the possession of the applicant or a representative of the applicant during the parade or procession and shall be presented, on request, to any officer of the police department at any time prior to or during the parade or procession.”</blockquote>
+		<p>How could this sentence be improved? We can convey the same information using the active voice, simple sentences, and natural language:</p>
+		<blockquote>“Bring the permit to the parade. A police officer may ask for it at any time before or during the event.”
+		</blockquote>
+		<p>Try it yourself on this paragraph:</p>
+		<blockquote>“Submit with the application a statement on Sponsor Organization letterhead attesting to the manner in which cleanup along the entire route will be accomplished (also acceptable is an executed copy of your cleanup agreement with a third party).”
+		</blockquote>
+
+<h2 id="visual-design">Visual Design: How Should It Look?</h2>
+<h3 id="importance-of-visual-design">Why is visual design important?</h3>
+	<h4>Usability</h4>
+	<p>Design isn’t just about making things look nice. The choices you make while designing impact how easy to use your product (the thing you’re making) is. Poor design makes people make mistakes, it makes them unhappy, and it can make them give up and not want to use what you’ve made.</p>
+	<h4>Trust</h4>
+	<p>While design isn’t just about making things look nice, that is part of it. It can be about the appearance of professionalism and trustworthiness. You’re asking people for time, information, maybe even money. You need to appear trustworthy.</p>
+	<h4>Set expectations</h4>
+	<p>Lastly, you can use visual design to set expectations. Maybe you’ve done everything we talked about in the content section: simplified your language, streamlined your questions. Your content is now easy to understand. But you still have to make it look easy, or people might give up before they start  </p>
+<h3 id="hierarchy">Hierarchy</h3>
+	<p>One of the most important principles in design, hierarchy. You might be familiar with the word in the context of a business, where the boss is at the top of the org chart, and under them are VPs, and then managers, and then workers.</p>
+
+	<p>Visual hierarchy is the same idea, but it’s about presenting elements on a page in terms of how important they are. Elements can include text, pictures, buttons, any piece of content on the page.</p>
+
+	<p>Your goal in designing is to have a strong hierarchy, where the more important content things <em>look</em> more important. Your job is to guide the user through what they should be looking at, in what order.</p>
+
+	<p>You can't assume that people will read everything you put on a page. Organize your content into logical chunks with clear headers. This will help readers scan for what they're looking for.</p>
+
+	<img src="hierarchy.png">
+
+	<p>These are three examples of pages.</p>
+	<ol>
+		<li>In the first, we have a weak hierarchy. everything has the same visual weight. Nothing stands out as important. For the user to find what they want, they’ll need to do a lot of work. When people are faced with doing a lot of work, they tend to close the tab.</li>
+		<li>In our second example, we have the opposite problem. Instead of everything looking the same style, every single thing looks different. There are too many visual styles. Lots of variation, but no logic. If everything is important, nothing is important. Again, it requires work from the user.</li>
+		<li>Strong hierarchy. Important things stand out, and objects are logically grouped.</li>
+	</ol>
+<h3 id="showing-hierarchy">Ways of Showing Hierarchy</h3>
+	<p>There are many visual techniques you can use to show hierarchy. These may seem obvious, but they can be used to great effect:</p>
+	<ul>
+		<li>Position</li> 
+		<li>Borders</li>
+		<li>Whitespace</li>
+		<li>Color</li>
+		<li>Size</li> 
+		<li>Weight</li>
+	</ul>
+	< HIERARCHY EXAMPLES HERE >
+
+<h3 id="typography">Typography</h3>
+	<h4>Avoid ALL CAPS</h4>
+	<p>Caps are often used for emphasis, but they should be avoided. It's difficult to read, and gives the reader an unpleasant sense of being shouted at. You can emphasize text by weight, size, and position. If people are still making errors that indicate they didn’t read the text, consider that visibility is not the issue.</p>
+	<h4>Don’t center text</h4>
+	<p>Centered text is also harder to read, especially if it's more than a few words. It's safest to stick to left-aligned.</p>
+	<h4>Limit fonts, colors, and type sizes</h4>
+	<p>Different text styles should indicate different hierarchy, and you’ll rarely need more than three. A jumble of many different styles is confusing.</p>
+	<h4>Minimum of 16px for web, 12pt for print</h4>
+	<p>Your form length is dictated by the amount of content, not the size of the paper. Don’t try to squeeze it in!</p>
+	<h4>Line height</h4>
+	<p>Again, no squeezing.</p>
+	< BAD TYPOGRAPHY EXAMPLE HERE >
+<h3>Visual Design Conclusion</h3>
+	<p>Strong hierarchy, fllow typography guidelines, form follows function.</p>
+
+<h2 id="delivery">Delivery: How should you share it?</h2>
+<h3 id="paper">Paper forms</h3>
+	<p>Pros:</p>
+	<ul>
+		<li>
+		<h4>Accessible</h4>
+		<p>You don’t need access to computer or phone, or any technical literacy. Everyone knows how to fill it out.</p>
+		</li>
+		<li><h4>Can be simplest</h4> 
+		<p></p></li>
+		<li><h4>Fits into existing workflow</h4>
+		<p>If you’re already using a paper form, your staff knows how to handle it. No training or changes to workflow needed. People are used to it.</p></li>
+	</ul>
+
+
+	<p>Cons:</p>
+	<h4>Manual data entry</h4>
+	<p>If the data gathered has to go anywhere (a spreadsheet, a database, a calendar, etc), it has to be manually entered.</p>
+	<h4>No data validation</h4>
+	<p>You’ll only catch errors and omissions when a real person looks at it, at which point it might be too late (ie, forgot to add phone number, no way to contact them).</p>
+	<h4>Hard to update</h4>
+	<p>You have to find and change the original file, print it, distribute it, and get rid of all the out of date ones.</p>
+	<h4>Barriers to access and submit</h4>
+	<p>Users need physical access to the forms (or the ability to print), and then need to mail them or drop them off in person.</p>
+	<h4>More work for user</h4>
+	<p>Users may have to answer questions that aren’t relevant to their particular situation. May have to answer question multiple times if multiple agencies need it.</p>
+
+<h3 id="pdf">Fillable PDF</h3>
+	<p>Pros:</p>
+	<h4>Accessible Online</h4>
+	<p></p>
+	<h4>Structured data</h4> 
+	<p></p>
+	<h4>Fits into existing workflow/easy transition from paper</h4>
+	<p></p>
+
+	<p>Cons:</p>
+	<h4>Difficult to Use</h4>
+	<p></p>
+	<h4>Not available on all devices</h4>
+	<p>PDFs can't easily be filled out on mobile devices or certain browsers. They may also require the user to download special software.</p>
+	
+	<p>A team at the United States Digital Service illustrates the drawbacks of relying on fillable PDFs:</p>
+	<blockquote cite="https://medium.com/the-u-s-digital-service/introducing-a-new-digital-application-for-healthcare-at-va-610d8bac4c78#.htq9di7s2"><p>“There is an online application (the Veterans Online Application, also known as VOA), but less than 10% of applicants are using it. Why? The answer is fairly straightforward: the online application does not open for most users. It is a fillable PDF. The only browser that defaults to Adobe is Internet Explorer. Even if you are using Internet Explorer, you must be using Adobe 8 or 9 for the application to open. If not, you’ll see [an error message].</p>
+	<p>More than 70% of U.S. Government traffic comes from Chrome, Safari, or Firefox. None of these browsers default to Adobe and that means over 70% of visitors have trouble accessing the healthcare application.”</p>
+	<p><a href="https://medium.com/the-u-s-digital-service/introducing-a-new-digital-application-for-healthcare-at-va-610d8bac4c78#.htq9di7s2">Introducing a new digital application for healthcare at VA</a></p>
+	</blockquote>
+
+<h3 id="web">Web Forms</h3>
+	<p>Pros:</p>
+	<h4>Broadly accessible</h4>
+	<p>Accessible at any time/place via the internet</p>
+	<h4>Easy to experiment</h4>
+	<p>Low cost to try something new, or change things</p>
+	<h4>Customizable with logic</h4>
+	<p>Use branching logic to show people only the questions relevant to them.</p>
+	<h4>Analytics</h4>
+	<p>You can use analytics to see exactly where people are making errors, and where people are dropping off.</p>
+	<h4>Structured data</h4>
+	<p>You can easily output data to CSV or spreadsheet, and import to other programs.</p> 
+	<h4>Data validation</h4>
+	<p>You can ensure that no form is submitted without all of the required fields answers. You can also validate the answers in the moment, for example making sure a phone number has ten digits.</p>
+	<h4>Less constraints</h4>
+	<p>Web forms offer the greatest flexibility in structure and content.</p> 
+
+	<p>Cons:</p>
+	<h4>Requires internet access/technical literacy</h4>
+	<p>Most forms use simple, common patters, but not everyone has internet access/technical literacy. Ineveitably, some people (low technical literacy, limited computer access) won’t be comfortable with them.</p>
+	<h4>Requires new workflow/skills for staff</h4>
+	<p>Requires new workflow/skills for staff. Requires people on staff who know how to set up and maintain it. May require changes to workflow.</p>
+
+<h3>Formats Conclusion</h3>
+	<p>Some benefits to paper. Approach fillable PDFs with caution. Move towards the web.</p>
+
+<h2 id="testing">Testing: How do I know it works?</h2>
+	<p>We talked again and again about the importance of making sure that users understand your content. The way to make sure that’s happening is through testing.
+	</p>
+
+	< RETURNS GRAPH >
+
+	<p>I cannot overstate the benefits of testing. Even if you have zero budget and no support from your boss, you can still conduct the simplest of tests, the hallway test. The idea of a hallway test is that you literally step out of your office and grab the first person you see in the hallway and make them do a usability test with you. Really though, you’re just looking for a person who hasn’t been working on the project and get a fresh set of eyes. It can be a person in another department, a friend, a family member.</p>
+<h3 id="usability-basics">Basics of Usability Testing</h3>
+	<h4>Set the scenario</h4>
+	<p></p> 
+	<h4>Walk-through</h4>
+	<p>Ask your tester to fill out the form.</p>
+	<h4>Narration</h4>
+	<p>The most important thing you’ll ask your tester to do is narrate their thought process out loud. What do they think each question is asking? Do any thoughts or feelings come up? If you have explanatory text, ask them to tell you what it’s saying in their own words.</p> 
+	<h4>Take a back seat</h4>
+	<p>What you want to be doing during this test is as little as possible. If they skip something, take note but don’t bring it up until the end. If they get something wrong, don’t correct them. The fact is, they can’t really get anything wrong. The test isn’t of them, it’s of the form. Once you’ve given your initial instructions, try not to say anything at all, unless you’re reminding the tester to think out loud.</p>
+	<h4>Observation</h4> 
+	<p>What you should be doing instead is observing. Do they hesitate at a certain question? Do they misinterpret a sentence?  Do they accidentally skip a question, or go in an order you didn’t expect? You can ask direct questions at the end, but you might notice inconsistencies between what they say, and what they actually did. Observation is invaluable.</p>
+
+</section>
+
+
+<section id="checklist" class="overflow-scroll">
+<table style="undefined;table-layout: fixed; width: 793px">
+  <tr>
+    <th>Form checklist</th>
+    <th>Yes?</th>
+  </tr>
+  <tr>
+    <td colspan="2">Content</td>
+  </tr>
+  <tr>
+    <td>Have you asked yourself the following questions for each field?:
+    <ol>
+    <li>Who within your organization uses the answer?</li>
+    <li>What do they use it for?</li>
+    <li>Is the answer required or optional?</li>
+    <li>What happens if a user enters incorrect information?</li>
+    </ol></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>If you’re asking for sensitive or unexpected information, have you explained why?</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>If there are any documents or information that needs to be gathered before starting the form are they listed at the top?</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Have you included a timeline for what happens after the form is submitted?</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="2">Language</td>
+  </tr>
+  <tr>
+    <td>Have you checked the reading level and made sure it’s appropriate?</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Is it written in the active voice?</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Have you removed unnecessary jargon and defined specialized terms?</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Are you using simple, common words?</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Are you using short, clear sentences?</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Have you read it out loud to ensure it sounds natural?</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Have you tested the form with another person to make sure they understand it?</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="2">Visual Design</td>
+  </tr>
+  <tr>
+    <td>Do the elements on your page have a clear hierarchy?</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Is your font size at least 12pt (print), or 16px (web)?</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Have you removed anything in ALL CAPS?</td>
+    <td></td>
+  </tr>
+</table>
+</section>
+
+<section id="resources">
+	<h2>Resources</h2>
+	<p>these are resources</p>
+	<ul>
+		<li>
+			<a href="http://oxidedesign.com/redesigning-election-forms-for-overseas-citizens/">Redesigning election forms for overseas citizens</a>
+			<p>This summary includes before and after examples of a form redesign covering both content and design. It includes a link to an in-depth report covering the process.</p>
+		</li>
+		<li>
+			<a href="http://www.uxmatters.com/mt/archives/2010/06/the-question-protocol-how-to-make-sure-every-form-field-is-necessary.php">The Question Protocol: How to Make Sure Every Form Field Is Necessary</a>
+			<p>How to use a question protocol to ensure your forms only cover the necessary questions.</p>
+		</li>
+		<li>
+			<a href="https://www.civicquarterly.com/article/paper-cut-the-bleeding-edge-of-government-forms/">Paper, Cut: The Bleeding Edge of Government Forms</a>
+			<p>Very in-depth read on the current state of government forms and potential for the future. Includes a helpful list of resources at the end.</p>
+		</li>
+		<li>
+			<a href="https://c.ymcdn.com/sites/www.bfma.org/resource/resmgr/Articles/07_46.pdf">Designing Usable Forms: Success Guaranteed (PDF)</a>
+			<p>A comprehensive paper on how to improve form usability and reduce errors.</p>
+		</li>
+		<li>
+			<a href="http://www.hemingwayapp.com/">Hemingway App</a>
+			<p>A free, simple tool you can use to check the reading level and complexity of your text. </p>
+		</li>
+		<li>
+			<a href="https://www.gov.uk/guidance/content-design/writing-for-gov-uk">Writing for GOV.UK</a>
+			<p>This is the style guide for the UK’s digital services department. It includes lots of great, concrete recommendations that are helpful to any government publication.</p>
+		</li>
+		<li>
+			<a href="http://www.slideshare.net/whitneyq/plain-language-accessibility-for-content">Plain Language: Accessibility for Content</a>
+			<p>This slide deck goes in depth on how to write simply, so readers will understand.</p>
+		</li>
+		<li>
+			<a href="http://www.mollymcleod.com/resources/">Saving Good Causes from Bad Design</a>
+			<p>This recording of a webinar by former Code for America design Molly McLeod is a great introduction to visual design for beginners.</p>
+		</li>
+		<li>
+			<a href="https://docs.google.com/presentation/d/1_l1JAcdMW8aF-djRIDs7yTGw_Y_QCQso3tIKXlUt3s4/edit?usp=sharing">Design for Non-Designers</a>
+			<p>A slide deck with notes from another Code for America Designer (me!) covering the basics of web design.</p>
+		</li>
+		<li>
+			<a href="https://standards.usa.gov/">U.S. Web Design Standards</a>
+			<p>If you are creating web forms from scratch, these web standards created for the federal government are a great resource. You can copy the code or just use the documentation as inspiration.</p>
+		</li>
+
+
+
+	</ul>
+</section>
+
+</div>
+</article>
+</div>
+
+</body>
+</html>
