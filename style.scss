@@ -1,0 +1,139 @@
+
+$colortext:#169D4F;
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding:10px;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Helvetica Neue',
+    Helvetica,
+    sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  color: #111;
+  background-color: #fff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  max-height: 100%;
+}
+
+a {
+  color: #07c;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-top: 1em;
+  margin-bottom: .5em;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
+h4 { font-size: 1rem;}
+h5 { font-size: .875rem;}
+h6 { font-size: .75rem;}
+
+p, dl, ol, ul, pre, blockquote {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+code,
+pre,
+samp {
+  font-family:
+    'Roboto Mono',
+    'Source Code Pro',
+    Menlo,
+    Consolas,
+    'Liberation Mono',
+    monospace;
+}
+
+code, samp {
+  font-size: 87.5%;
+  padding: .125em;
+}
+
+pre {
+  font-size: 87.5%;
+  overflow: scroll;
+}
+
+blockquote {
+  font-size: 1.25rem;
+  font-style: italic;
+  background: lightgray;
+  padding: 1rem;
+}
+
+hr {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  border: 0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ccc;
+}
+h3 {color:$colortext;}
+
+ul {
+list-style-type: none;
+padding-left: 0;
+} 
+
+nav ul {
+font-weight: bold;
+margin-top: 0;
+margin-bottom: 0;
+} 
+
+nav ul a:hover {text-decoration: none;}
+
+nav li a {display:block;}
+
+nav ul > ul {
+padding-left: 1rem;
+font-weight: normal;
+
+  li {
+  font-size: .875rem;
+  xbackground-color: gray;
+    a 
+      {
+        padding:.5rem;
+      }
+    a:hover 
+    {
+      color:white;
+      background-color: $colortext;
+    }
+  }
+}
+
+ul a {text-decoration: none;}
+ul a:hover {text-decoration: underline;}
+#resources a {font-weight: bold;}
+#resources li {margin-bottom: 2rem;}
+#resources p {margin-top: 0;}
+caption { font-size: .875rem; }
